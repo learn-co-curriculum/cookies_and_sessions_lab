@@ -15,3 +15,13 @@ We're going to use this to implement a shopping site. Here's how the site will w
   3. The item is added to their cart. The page shows everything in the user's cart.
 
 ## Instructions
+
+You'll find that the rspec is failing. Get them to pass. I would tackle it like this:
+
+1. `ApplicationController#cart`s tests are failing because, primarily, it doesn't exist. Write it to make them pass.
+2. Now `rails generate` a Products controller with two actions, index and add.
+3. Fill them in to make the specs pass.
+
+After the specs pass, you'll find you still don't have an app, for you have no views. Rails will tell you which ones you need to write.
+
+The page should have, at a minimum: a text box where I can enter the name of a product, a submit button that adds it to my cart, and a display of what's in my cart.
