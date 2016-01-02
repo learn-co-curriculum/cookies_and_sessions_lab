@@ -6,7 +6,7 @@ We're going to make a very simple shopping cart, stored entirely in the session.
 
 ## Introduction
 
-The Rails `session` method gives us access to the Rails session. The session is a datastore implemented with cookies. You can store simple data structures in the session. ActiveRecord models, no. Arrays of strings or numbers, yes. Basically, if it could be converted into JSON, it can go in the `session`.
+The Rails `session` method gives us access to the Rails session. The session is a datastore implemented with cookies. You can store simple data structures in the session. ActiveRecord models, no. Arrays of strings or numbers, yes. Basically, stick to data literals—numbers, strings, hashes, and arrays.
 
 We're going to use this to implement a shopping site. Here's how the site will work:
 
@@ -21,7 +21,4 @@ You'll find that the rspec is failing. Get them to pass. I would tackle it like 
 1. `ApplicationController#cart`s tests are failing because, primarily, it doesn't exist. Write it to make them pass.
 2. Now `rails generate` a Products controller with two actions, index and add.
 3. Fill them in to make the specs pass.
-
-After the specs pass, you'll find you still don't have an app, for you have no views. Rails will tell you which ones you need to write.
-
-The page should have, at a minimum: a text box where I can enter the name of a product, a submit button that adds it to my cart, and a display of what's in my cart.
+4. Now make the feature test pass. You'll have to write views for this. The page should have, at a minimum: a text box where I can enter the name of a product, a submit button that adds it to my cart, and a display of what's in my cart.
