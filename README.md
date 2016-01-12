@@ -1,4 +1,4 @@
-# Cookes and Sessions
+# Cookies and Sessions
 
 ## Objective
 
