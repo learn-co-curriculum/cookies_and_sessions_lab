@@ -16,8 +16,6 @@ We're going to use this to implement a shopping site. Here's how the site will w
 
 ## Instructions
 
-You'll find that the rspec is failing. Get them to pass. I would tackle it like this:
-
-1. `ApplicationController#cart`'s tests are failing because, primarily, it doesn't exist. Create the controller to make them pass.
+1. Create the cart method in `ApplicationController#cart`.
 2. Create a Products controller with two actions, index and add.
 3. Create views using the feature tests as your guide. The page should have, at a minimum: a text box where the user can enter the name of a product, a submit button that adds it to their cart, and a display of what's in the cart.
