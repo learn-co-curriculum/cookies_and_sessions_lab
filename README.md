@@ -18,7 +18,6 @@ We're going to use this to implement a shopping site. Here's how the site will w
 
 You'll find that the rspec is failing. Get them to pass. I would tackle it like this:
 
-1. `ApplicationController#cart`s tests are failing because, primarily, it doesn't exist. Write it to make them pass.
-2. Now `rails generate` a Products controller with two actions, index and add.
-3. Fill them in to make the specs pass.
-4. Now make the feature test pass. You'll have to write views for this. The page should have, at a minimum: a text box where I can enter the name of a product, a submit button that adds it to my cart, and a display of what's in my cart.
+1. `ApplicationController#cart`'s tests are failing because, primarily, it doesn't exist. Create the controller to make them pass.
+2. Create a Products controller with two actions, index and add.
+3. Create views using the feature tests as your guide. The page should have, at a minimum: a text box where the user can enter the name of a product, a submit button that adds it to their cart, and a display of what's in the cart.
