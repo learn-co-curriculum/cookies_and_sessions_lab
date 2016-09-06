@@ -1,4 +1,4 @@
-# Cookes and Sessions
+# Cookies and Sessions Lab
 
 ## Objective
 
@@ -6,22 +6,18 @@ We're going to make a very simple shopping cart, stored entirely in the session.
 
 ## Introduction
 
-The Rails `session` method gives us access to the Rails session. The session is a datastore implemented with cookies. You can store simple data structures in the session. ActiveRecord models, no. Arrays of strings or numbers, yes. Basically, if it could be converted into JSON, it can go in the `session`.
+The Rails `session` method gives us access to the Rails session. The session is a datastore implemented with cookies. You can store simple data structures in the session. ActiveRecord models, no. Arrays of strings or numbers, yes. Basically, stick to data literals—numbers, strings, hashes, and arrays.
 
 We're going to use this to implement a shopping site. Here's how the site will work:
 
   1. The page has an input box on it.
-  2. The user types in the item they want and click `add to cart`.
+  2. The user types in the item they want and clicks `add to cart`.
   3. The item is added to their cart. The page shows everything in the user's cart.
 
 ## Instructions
 
-You'll find that the rspec is failing. Get them to pass. I would tackle it like this:
+1. Create the cart method in `ApplicationController#cart`.
+2. Create a Products controller with two actions, index and add.
+3. Create views using the feature tests as your guide. The page should have, at a minimum: a text box where the user can enter the name of a product, a submit button that adds it to their cart, and a display of what's in the cart.
 
-1. `ApplicationController#cart`s tests are failing because, primarily, it doesn't exist. Write it to make them pass.
-2. Now `rails generate` a Products controller with two actions, index and add.
-3. Fill them in to make the specs pass.
-
-After the specs pass, you'll find you still don't have an app, for you have no views. Rails will tell you which ones you need to write.
-
-The page should have, at a minimum: a text box where I can enter the name of a product, a submit button that adds it to my cart, and a display of what's in my cart.
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cookies_and_sessions_lab' title='Cookies and Sessions Lab'>Cookies and Sessions Lab</a> on Learn.co and start learning to code for free.</p>
