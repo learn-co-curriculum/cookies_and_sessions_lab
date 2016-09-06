@@ -12,7 +12,7 @@ RSpec.describe ApplicationController do
     end
 
     it "returns the existing cart if one already exists" do
-      groceries = ['apples', 'banans', 'pears']
+      groceries = ['apples', 'bananas', 'pears']
       @request.session[:cart] = groceries
       expect(controller.cart).to eq @request.session[:cart]
       expect(controller.cart).to eq groceries
