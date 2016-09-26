@@ -1,4 +1,8 @@
-<%= @cart.join ', ' %>
+<ul>  
+  <%= cart.each do |product| %>
+    <li><%= product %></li>
+  <% end %>
+</ul>
 
 <%= form_tag ({controller: 'products',
     action: 'add',
