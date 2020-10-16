@@ -22,5 +22,3 @@ We're going to use this to implement a shopping site. Here's how the site will w
 4. Create views using the feature tests as your guide. The page should have, at a minimum: a text box where the user can enter the name of a product, a submit button that adds it to their cart, and a display of what's in the cart.
 
 For this lab, there is no need to create tables and models and store the products in the database. We'll be using cookies via the Rails `session` method, along with our `cart` helper method to persist the products to the cart and to display them in the view.
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/cookies_and_sessions_lab'>Cookies And Sessions Lab</a> on Learn.co and start learning to code for free.</p>
